@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce method</title>
+</head>
+<body>
+    <script>
+        /*function demoFunc(acc,num){
+            return acc + num;
+        }
+        const number = [1,2,30,49,50];
+        const total = number.reduce(demoFunc);
+        document.write(`${total}`)*/
+        
+        const number = [1,2,30,49,50];
+        const total = number.reduce((acc,num)=>acc + num);
+        document.write(`${total}`)
+    </script>
+</body>
+</html>

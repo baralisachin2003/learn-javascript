@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow fucntion</title>
+</head>
+<body>
+    <pre>
+        syntax for arrow function:
+            function definations
+
+                    const function_name = (parameter list)=>{
+                       block of statement
+                    }
+            callint the funciton
+                    funciton_name(arguement list)
+
+        
+        The benefit of arrow function is that there is no need of return if we want to return only one satement
+
+    </pre>
+
+    <script>
+        //defining the arrow function to find the greatest number:
+
+        const greatest = (n1,n2,n3) =>{
+            if(n1>n2&&n1>n3){
+                return n1;
+            }
+            else if(n2>n3){
+                return n2;
+            }
+            else{
+                return n3;
+            }
+        }
+
+        // calling the function
+
+        largest = greatest(2,5,4);
+        document.write(`The greatest number is ${largest}<br>`)
+
+        //The benefit of arrow function is that there is no need of return if we want to return only one satement
+
+        //defining the arrow function
+        
+        const add = (num1,num2) =>(num1 + num2 );
+
+        //calling a function 
+
+        const result = add(5,6);
+        document.write(`The sum of 5 and 6 is ${result}`);
+
+
+    </script>
+</body>
+</html>

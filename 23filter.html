@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+</head>
+<body>
+    <script>
+        /*function demoFunc(num){
+            return num>40;
+        }
+
+        const number = [20,200,40,1,2,3,45,60]
+        const filterData= number.filter(demoFunc);
+        document.write(`${filterData}`)*/
+
+        const data = [20,30,40,77,88,95,45,60]
+        
+        const filterData = data.filter(num=> num>40 && num<90)
+        document.write(`${filterData}`)
+
+        
+    </script>
+</body>
+</html>

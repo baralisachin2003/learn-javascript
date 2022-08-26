@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    
+    <script>
+        /*const demoFunc =num=>{
+            document.write(`<li>${num}</li>`)
+        }
+        const numbers = [1,2,3,4,5,6]
+        numbers.map(demoFunc)
+
+        const Func = fruit =>{
+            document.write(`<li>${fruit}</li>`)
+        }
+        const fruits = ['orange','apple','mango','papaya']
+        fruits.map(Func)*/
+
+        number = [1,2,3]
+        number.map(function(num){
+            document.write(`<li>${num}</li>`)
+        })
+
+        fruits = ['orange','papaya','mango','apple']
+        fruits.map(fruit=>(
+            document.write(`<li>${fruit}</li>`)
+        ))
+    </script>
+</body>
+</html>

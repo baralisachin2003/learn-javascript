@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods</title>
+</head>
+<body>
+    <script>
+        const info = 'my name is sachin barali. my sister name is srijana barali.';
+        document.write(`${info}<br>`)
+
+        // to count the length of the given string use length.
+        document.write(`The length of string is ${info.length}<br>`);
+
+        // to find the position of the string use indexOf().
+        const position = info.indexOf('name');
+        document.write(`The position of name is ${position}<br>`);
+
+        //to find the position of last string use lastIndexOf().
+        document.write(`The position of last 'name' is ${info.lastIndexOf('name')}<br>`);
+
+        // to convert the string into uppercase.
+        document.write(`${info.toUpperCase()}<br>`)
+
+        // to convert the string into lowercase.
+        const my_text = 'THIS IS MR.SACHIN BARALI';
+        document.write(`${my_text}<br>`)
+        document.write(`${my_text.toLowerCase()}<br>`);
+
+        //to replace the string use replace().
+        document.write(`${info.replace('sachin','sachina')}<br>`);
+
+        // to replace more than one same string use replaceAll().
+        document.write(`${info.replaceAll('barali','poudel')}<br>`);
+
+        //substring -> small part of string.
+        //methods of substring.
+        //1> slice(start,end)
+        //2> substring(start,end)
+        //3> substr(start,length)
+
+        document.write(`${info.slice(11,24)}....................<br>`);
+        document.write(`${info.substring(11,24)}..................<br>`)
+        document.write(`${info.substr(11,13)}..................<br>`)
+    </script>
+</body>
+</html>

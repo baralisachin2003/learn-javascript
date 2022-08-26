@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <script>
+        const fruits = ['apple','mango','papaya','banana','orange','lemon']
+        document.write(typeof(fruits))
+
+        document.write(`${fruits}<br>`)
+        
+        //accessing the single element from the array use indexing ie start from 0
+
+        document.write(`${fruits[0]}<br>`) 
+        document.write(`${fruits[1]}<br>`)
+        document.write(`${fruits[2]}<br>`)
+        
+        //count the length of the array
+        document.write(`${fruits.length}<br>`)
+
+        //to remove last element from an array use pop()
+        fruits.pop()
+        document.write(fruits,'<br>')
+
+        // to add last element in an array use push()
+        fruits.push('tomato')
+        document.write(fruits,'<br>')
+
+        // to remove first element from an array use shift()
+        fruits.shift()
+        document.write(fruits,'<br>')
+
+        //to add array element in first position use unshift()
+        fruits.unshift('pineapple')
+        document.write(fruits,'<br>')
+
+        //to add more than one array element and at specific position use splice()
+        //here 2 represent where to start to add element
+        //here 0 represent no any element is removed
+
+        fruits.splice(2,0,'pomegranite','guava')
+        document.write(fruits,'<br>')
+
+        fruits.splice(2,1,'lemon')
+        document.write(fruits,'<br>')
+        
+        fruits.splice(2,2)
+        document.write(fruits,'<br>')
+
+        //sort in ascending order use sort()
+        fruits.sort()
+        document.write(fruits,'<br>')
+
+        //reverse()
+        my_num = [1,3,55,6,0,9,5]
+        my_num.sort()
+        document.write(my_num,'<br>')
+        
+        my_num.reverse()
+        document.write(my_num)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>no title</title>
+</head>
+<body>
+    <button onmouseover="func()" onmouseout="demofunc()">click on me</button>
+    <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur debitis qui consequuntur dolore deleniti beatae dolor dolorem, ducimus cumque et necessitatibus modi assumenda nam labore accusantium libero quidem ea ab?</p>
+
+    <script>
+        const func= ()=>{
+            document.getElementById('para').innerHTML = alert('This is paragraph')
+        }
+
+        const demofunc = ()=>{
+            document.getElementById('para').style.backgroundColor = 'black'
+        }
+    </script>
+</body>
+</html>
